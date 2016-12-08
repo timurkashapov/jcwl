@@ -79,25 +79,25 @@ public class Template {
      */
 
     @Override
-    public int hashCode() {
+    public final int hashCode() {
         return super.hashCode();
         // TO-DO
     }
 
     @Override
-    public boolean equals(final Object obj) {
+    public final boolean equals(final Object obj) {
         return super.equals(obj);
         // TO-DO
     }
 
     @Override
-    public String toString() {
+    public final String toString() {
         return super.toString();
         // TO-DO
     }
 
     @Override
-    protected void finalize() throws Throwable {
+    protected final void finalize() throws Throwable {
         super.finalize();
         // TO-DO
     }

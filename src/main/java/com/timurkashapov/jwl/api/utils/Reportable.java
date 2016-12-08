@@ -9,12 +9,14 @@ public interface Reportable {
     /**
      * Start the measure for operation.
      * Запустить измерение операции.
+     * @param title title
      */
     void startMeasure(final String title);
 
     /**
      * Stop the measure for operation.
      * Закончить измерение для операции.
+     * @param title title
      */
     void endMeasure(final String title);
 

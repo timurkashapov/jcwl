@@ -9,5 +9,18 @@ import java.util.Random;
  */
 public interface Generatable {
 
-    Random random = new Random(System.currentTimeMillis());
+    /**
+     * Random.
+     */
+    Random RANDOM = new Random(System.currentTimeMillis());
+
+    /**
+     * Regex pattern.
+     */
+    String PATTERN = "^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$";
+
+    /**
+     * Generate.
+     */
+    void generate();
 }
