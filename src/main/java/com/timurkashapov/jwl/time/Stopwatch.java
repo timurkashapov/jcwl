@@ -9,22 +9,22 @@ import com.timurkashapov.jwl.api.Constants;
  * @since 0.1
  * @version 0.1
  */
-public final class Stopwatch implements Constants {
+public final class Stopwatch {
 
     /**
      * Zero long.
      */
-    private final long ZERO_L = 0L;
+    private static final long ZERO = 0L;
 
     /**
      * Fifty Nine long.
      */
-    private final long FIFTY_NINE_L = 59L;
+    private static final long FIFTY_NINE = 59L;
 
     /**
-     * Thousand long
+     * Thousand long.
      */
-    private final long THOUSAND_L = 1000L;
+    private static final long THOUSAND = 1000L;
 
     /**
      * Current time in UNIX time stamp.
@@ -66,9 +66,10 @@ public final class Stopwatch implements Constants {
     private long hours = 0L;
 
     /**
-     * Empty constructor.
+     * Constructor.
+     * @param args command-line arguments
      */
-    public Stopwatch() {
+    public Stopwatch(final String... args) {
         System.out.printf("\nREADY");
         }
 
@@ -76,9 +77,9 @@ public final class Stopwatch implements Constants {
      * Main test.
      * @param args command-line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        new Stopwatch().start();
+        new Stopwatch(args).start();
 
     }
 
@@ -101,28 +102,28 @@ public final class Stopwatch implements Constants {
 
             last = System.currentTimeMillis();
 
-            if ((last - current) > THOUSAND_L) {
+            if ((last - current) > Stopwatch.THOUSAND) {
                 System.out.printf("\n%d h : %d min : %d sec", hours, minutes, seconds);
                 seconds++;
                 current = last;
             }
 
-            if (hours > FIFTY_NINE_L & minutes > FIFTY_NINE_L & seconds > FIFTY_NINE_L) {
-                seconds = ZERO_L;
-                minutes = ZERO_L;
-                hours   = ZERO_L;
+            if (hours > Stopwatch.FIFTY_NINE & minutes > Stopwatch.FIFTY_NINE & seconds > Stopwatch.FIFTY_NINE) {
+                seconds = Stopwatch.ZERO;
+                minutes = Stopwatch.ZERO;
+                hours   = Stopwatch.ZERO;
                 System.out.println("ONE HOUR");
                 System.exit(Constants.ZERO);
             }
 
-            if (minutes > FIFTY_NINE_L & seconds > FIFTY_NINE_L) {
-                seconds = ZERO_L;
-                minutes = ZERO_L;
+            if (minutes > Stopwatch.FIFTY_NINE & seconds > Stopwatch.FIFTY_NINE) {
+                seconds = Stopwatch.ZERO;
+                minutes = Stopwatch.ZERO;
                 hours++;
             }
 
-            if (seconds > FIFTY_NINE_L) {
-                seconds = ZERO_L;
+            if (seconds > Stopwatch.FIFTY_NINE) {
+                seconds = Stopwatch.ZERO;
                 minutes++;
             }
         }
