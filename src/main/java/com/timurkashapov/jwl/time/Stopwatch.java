@@ -71,7 +71,7 @@ public final class Stopwatch {
      */
     public Stopwatch(final String... args) {
         System.out.printf("\nREADY");
-        }
+    }
 
     /**
      * Main test.
