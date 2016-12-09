@@ -2,12 +2,28 @@
 <Diagram>
   <ID>JAVA</ID>
   <OriginalElement />
-  <nodes />
+  <nodes>
+    <node x="44.0" y="0.0">com.timurkashapov.jwl.api.Constants</node>
+    <node x="198.0" y="337.0">com.timurkashapov.jwl.api.utils.Generatable</node>
+    <node x="0.0" y="79.0">com.timurkashapov.jwl.time.Stopwatch</node>
+    <node x="218.0" y="0.0">com.timurkashapov.jwl.Template</node>
+    <node x="0.0" y="197.0">com.timurkashapov.jwl.api.utils.Reportable</node>
+    <node x="0.0" y="337.0">com.timurkashapov.jwl.Index</node>
+  </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="0.0" y="0.0" />
+  <edges>
+    <edge source="com.timurkashapov.jwl.time.Stopwatch" target="com.timurkashapov.jwl.api.Constants">
+      <point x="0.0" y="-36.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="204.5" y="194.0" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 
