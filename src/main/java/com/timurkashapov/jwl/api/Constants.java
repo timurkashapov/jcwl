@@ -38,7 +38,7 @@ public interface Constants {
     int TEN = 10;
 
     /**
-     * Integer Sixty
+     * Integer Sixty.
      */
     int SIXTY = 60;
 
@@ -81,5 +81,10 @@ public interface Constants {
     * Null.
     */
     Object NULL = null;
+
+    /**
+     * Tool.
+     */
+    void tool();
 
 }
