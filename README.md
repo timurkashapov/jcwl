@@ -6,17 +6,15 @@ jwl is Java-Working-Library for solve standard tasks with useful and fast experi
 * Generators
 * Stopwatch
 
+---
+
 comming soon...
 
 * Data Structures
-
-List
- ArrayList
+> List: ArrayList
 
 
 
 * Algorithms
-
-Sorting:
-  Bobble Sort
+> Sorting: Bobble Sort
 
