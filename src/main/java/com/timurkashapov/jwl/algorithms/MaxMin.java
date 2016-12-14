@@ -7,10 +7,10 @@ package com.timurkashapov.jwl.algorithms;
 public class MaxMin {
 
     /*
-     * byte's, short's, int's, long's
+     * Maximum and minimum from array of byte's, short's, int's, long's, float's, double's
      */
 
-    // Max
+    // Maximum of byte's, short's, int's, long's
 
     /**
      * Get to maximum from array of byte's.
@@ -52,7 +52,7 @@ public class MaxMin {
         return 1L;
     }
 
-    // Min
+    // Minimum of byte's, short's, int's, long's
 
     /**
      * Get to minimum from array of byte's.
@@ -94,12 +94,7 @@ public class MaxMin {
         return 5L;
     }
 
-
-    /*
-     * float's, double's
-     */
-
-    // Max
+    // Maximum of float's, double's
 
     /**
      * Get to maximum from array of float's.
@@ -121,7 +116,7 @@ public class MaxMin {
         return 5d;
     }
 
-    // Min
+    // Minimum of float's, double's
 
     /**
      * Get to minimum from array of float's.
@@ -144,7 +139,7 @@ public class MaxMin {
     }
 
     /*
-     * Maximum and Minimum between two similar digits
+     * Maximum and Minimum between two similar digits of byte's, short's, int's, long's, float's, double's
      */
 
     // Maximum between byte's, short's, int's, long's
@@ -172,7 +167,7 @@ public class MaxMin {
     /**
      * Get to maximum between two similar int's.
      * @param first first
-     * @param secind second
+     * @param second second
      * @return maximum
      */
     private int max(final int first, final int second) {
@@ -189,7 +184,8 @@ public class MaxMin {
         return first >= second ? first : second;
     }
 
-    // Max float's, double's
+    // Maximum between two float's, double's
+
     /**
      * Get to maximum between two similar float's.
      * @param first first
@@ -210,7 +206,7 @@ public class MaxMin {
         return first >= second ? first : second;
     }
 
-    // Min between byte's, short's, int's, long's
+    // Minimum between two byte's, short's, int's, long's
 
     /**
      * Get to minimun between two similar byte's.
@@ -235,7 +231,7 @@ public class MaxMin {
     /**
      * Get to minimun between two similar int's.
      * @param first first
-     * @param secind second
+     * @param second second
      * @return minimun
      */
     private int min(final int first, final int second) {
@@ -252,7 +248,8 @@ public class MaxMin {
         return first <= second ? first : second;
     }
 
-    // Min float's, double's
+    // Minimum between two float's, double's
+
     /**
      * Get to minimun between two similar float's.
      * @param first first
