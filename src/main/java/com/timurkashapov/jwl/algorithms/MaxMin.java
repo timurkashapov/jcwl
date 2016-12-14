@@ -19,7 +19,7 @@ public class MaxMin {
      */
     public byte getMax(byte[] array) {
         // TO-DO
-        return 1;
+        return 2;
     }
 
     /**
