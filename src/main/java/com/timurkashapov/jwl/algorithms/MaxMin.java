@@ -150,7 +150,7 @@ public class MaxMin {
      * @param second second
      * @return maximum
      */
-    private byte max(final byte first, final byte second) {
+    public byte max(final byte first, final byte second) {
         return first >= second ? first : second;
     }
 
@@ -160,7 +160,7 @@ public class MaxMin {
      * @param second second
      * @return maximum
      */
-    private short max(final short first, final short second) {
+    public short max(final short first, final short second) {
         return first >= second ? first : second;
     }
 
@@ -170,7 +170,7 @@ public class MaxMin {
      * @param second second
      * @return maximum
      */
-    private int max(final int first, final int second) {
+    public int max(final int first, final int second) {
         return first >= second ? first : second;
     }
 
@@ -180,7 +180,7 @@ public class MaxMin {
      * @param second secong
      * @return maximum
      */
-    private long max(final long first, final long second) {
+    public long max(final long first, final long second) {
         return first >= second ? first : second;
     }
 
@@ -192,7 +192,7 @@ public class MaxMin {
      * @param second second
      * @return maximum
      */
-    private float max(final float first, final float second) {
+    public float max(final float first, final float second) {
         return first >= second ? first : second;
     }
 
@@ -202,7 +202,7 @@ public class MaxMin {
      * @param second second
      * @return maximum
      */
-    private double max(final double first, final double second) {
+    public double max(final double first, final double second) {
         return first >= second ? first : second;
     }
 
@@ -214,7 +214,7 @@ public class MaxMin {
      * @param second second
      * @return minimun
      */
-    private byte min(final byte first, final byte second) {
+    public byte min(final byte first, final byte second) {
         return first <= second ? first : second;
     }
 
@@ -224,7 +224,7 @@ public class MaxMin {
      * @param second second
      * @return minimun
      */
-    private short min(final short first, final short second) {
+    public short min(final short first, final short second) {
         return first <= second ? first : second;
     }
 
@@ -234,7 +234,7 @@ public class MaxMin {
      * @param second second
      * @return minimun
      */
-    private int min(final int first, final int second) {
+    public int min(final int first, final int second) {
         return first <= second ? first : second;
     }
 
@@ -244,7 +244,7 @@ public class MaxMin {
      * @param second secong
      * @return minimun
      */
-    private long min(final long first, final long second) {
+    public long min(final long first, final long second) {
         return first <= second ? first : second;
     }
 
@@ -256,7 +256,7 @@ public class MaxMin {
      * @param second second
      * @return minimun
      */
-    private float min(final float first, final float second) {
+    public float min(final float first, final float second) {
         return first <= second ? first : second;
     }
 
@@ -266,7 +266,7 @@ public class MaxMin {
      * @param second second
      * @return minimun
      */
-    private double min(final double first, final double second) {
+    public double min(final double first, final double second) {
         return first <= second ? first : second;
     }
 
