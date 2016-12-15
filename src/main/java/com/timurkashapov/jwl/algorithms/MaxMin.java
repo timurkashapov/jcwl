@@ -17,7 +17,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public byte getMax(byte[] array) {
+    public byte max(byte[] array) {
         // TO-DO
         return 2;
     }
@@ -27,7 +27,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public short getMax(short[] array) {
+    public short max(short[] array) {
         // TO-DO
         return 1;
     }
@@ -37,7 +37,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public int getMax(int[] array) {
+    public int max(int[] array) {
         // TO-DO
         return 5;
     }
@@ -47,7 +47,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public long getMax(long[] array) {
+    public long max(long[] array) {
         // TO-DO
         return 1L;
     }
@@ -59,7 +59,7 @@ public class MaxMin {
      * @param array array
      * @return minimum
      */
-    public byte getMin(byte[] array) {
+    public byte min(byte[] array) {
         // TO-DO
         return 1;
     }
@@ -69,7 +69,7 @@ public class MaxMin {
      * @param array array
      * @return minimum
      */
-    public short getMin(short[] array) {
+    public short min(short[] array) {
         // TO-DO
         return 5;
     }
@@ -79,7 +79,7 @@ public class MaxMin {
      * @param array array
      * @return minimum int
      */
-    public int getMin(int[] array) {
+    public int min(int[] array) {
         // TO-DO
         return 5;
     }
@@ -89,7 +89,7 @@ public class MaxMin {
      * @param array array
      * @return minimum of long array
      */
-    public long getMin(long[] array) {
+    public long min(long[] array) {
         // TO-DO
         return 5L;
     }
@@ -101,7 +101,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public float getMax(float[] array) {
+    public float max(float[] array) {
         // TO-DO
         return 2f;
     }
@@ -111,7 +111,7 @@ public class MaxMin {
      * @param array array
      * @return maximum
      */
-    public double getMax(double[] array) {
+    public double max(double[] array) {
         // TO-DO
         return 5d;
     }
@@ -123,7 +123,7 @@ public class MaxMin {
      * @param array array
      * @return minimum
      */
-    public float getMin(float[] array) {
+    public float min(float[] array) {
         // TO-DO
         return 5f;
     }
@@ -133,7 +133,7 @@ public class MaxMin {
      * @param array array
      * @return minimum
      */
-    public double getMin(double[] array) {
+    public double min(double[] array) {
         // TO-DO
         return 5d;
     }
@@ -269,6 +269,4 @@ public class MaxMin {
     public double min(final double first, final double second) {
         return first <= second ? first : second;
     }
-
-
 }
