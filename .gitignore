@@ -2,5 +2,6 @@
 .gitignore
 .idea/
 JWL.iml
-src/test/
 target/
+src/main/java/com/timurkashapov/jwl/sketchs/
+src/site/

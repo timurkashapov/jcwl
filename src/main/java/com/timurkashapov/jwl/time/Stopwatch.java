@@ -2,12 +2,14 @@ package com.timurkashapov.jwl.time;
 
 import com.timurkashapov.jwl.api.Constants;
 
+import java.io.IOException;
+
 /**
  * Stopwatch.
  *
  * @author Timur Kashapov
- * @since 0.1
  * @version 0.1
+ * @since 0.1
  */
 public final class Stopwatch {
 
@@ -67,6 +69,7 @@ public final class Stopwatch {
 
     /**
      * Constructor.
+     *
      * @param args command-line arguments
      */
     public Stopwatch(final String... args) {
@@ -75,6 +78,7 @@ public final class Stopwatch {
 
     /**
      * Main test.
+     *
      * @param args command-line arguments
      */
     public static void main(final String[] args) {
@@ -111,7 +115,7 @@ public final class Stopwatch {
             if (hours > Stopwatch.FIFTY_NINE & minutes > Stopwatch.FIFTY_NINE & seconds > Stopwatch.FIFTY_NINE) {
                 seconds = Stopwatch.ZERO;
                 minutes = Stopwatch.ZERO;
-                hours   = Stopwatch.ZERO;
+                hours = Stopwatch.ZERO;
                 System.out.println("ONE HOUR");
                 System.exit(Constants.ZERO);
             }
