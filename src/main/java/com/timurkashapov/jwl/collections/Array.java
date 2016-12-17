@@ -80,16 +80,22 @@ public final class Array  {
         this.source = extended;
     }
 
-    public int find(final int element) {
+    /**
+     * Find the element.
+     * @param element element.
+     * @return boolean.
+     */
+    public boolean find(final int element) {
 
-        int serched = element;
+        boolean result = false;
 
         for (int i = 0; i < this.length; i++) {
             if (this.source[i] == element) {
+                result = true;
                 break;
             }
         }
-        return element;
+        return result;
     }
 
     /**
