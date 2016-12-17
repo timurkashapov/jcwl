@@ -1,20 +1,20 @@
 package com.timurkashapov.jwl.algorithms;
 
 /**
- * Search min and max from array of digits.
+ * Search min and max from collections of digits.
  * @author Timur Kashapov
  */
 public class MaxMin {
 
     /*
-     * Maximum and minimum from array of byte's, short's, int's, long's, float's, double's
+     * Maximum and minimum from collections of byte's, short's, int's, long's, float's, double's
      */
 
     // Maximum of byte's, short's, int's, long's
 
     /**
-     * Get to maximum from array of byte's.
-     * @param array array
+     * Get to maximum from collections of byte's.
+     * @param array collections
      * @return maximum
      */
     public byte max(byte[] array) {
@@ -23,8 +23,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to maximum from array of short's.
-     * @param array array
+     * Get to maximum from collections of short's.
+     * @param array collections
      * @return maximum
      */
     public short max(short[] array) {
@@ -33,8 +33,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to maximum from array of int's
-     * @param array array
+     * Get to maximum from collections of int's
+     * @param array collections
      * @return maximum
      */
     public int max(int[] array) {
@@ -43,8 +43,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to maximum from array of long's.
-     * @param array array
+     * Get to maximum from collections of long's.
+     * @param array collections
      * @return maximum
      */
     public long max(long[] array) {
@@ -55,8 +55,8 @@ public class MaxMin {
     // Minimum of byte's, short's, int's, long's
 
     /**
-     * Get to minimum from array of byte's.
-     * @param array array
+     * Get to minimum from collections of byte's.
+     * @param array collections
      * @return minimum
      */
     public byte min(byte[] array) {
@@ -65,8 +65,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to minimum from array of short's.
-     * @param array array
+     * Get to minimum from collections of short's.
+     * @param array collections
      * @return minimum
      */
     public short min(short[] array) {
@@ -75,8 +75,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to minimum from array of int's.
-     * @param array array
+     * Get to minimum from collections of int's.
+     * @param array collections
      * @return minimum int
      */
     public int min(int[] array) {
@@ -85,9 +85,9 @@ public class MaxMin {
     }
 
     /**
-     * Get to minimum from array of long's.
-     * @param array array
-     * @return minimum of long array
+     * Get to minimum from collections of long's.
+     * @param array collections
+     * @return minimum of long collections
      */
     public long min(long[] array) {
         // TO-DO
@@ -97,8 +97,8 @@ public class MaxMin {
     // Maximum of float's, double's
 
     /**
-     * Get to maximum from array of float's.
-     * @param array array
+     * Get to maximum from collections of float's.
+     * @param array collections
      * @return maximum
      */
     public float max(float[] array) {
@@ -107,8 +107,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to maxmimum from array of double's.
-     * @param array array
+     * Get to maxmimum from collections of double's.
+     * @param array collections
      * @return maximum
      */
     public double max(double[] array) {
@@ -119,8 +119,8 @@ public class MaxMin {
     // Minimum of float's, double's
 
     /**
-     * Get to minimum from array of float's.
-     * @param array array
+     * Get to minimum from collections of float's.
+     * @param array collections
      * @return minimum
      */
     public float min(float[] array) {
@@ -129,8 +129,8 @@ public class MaxMin {
     }
 
     /**
-     * Get to minimum from array of double's.
-     * @param array array
+     * Get to minimum from collections of double's.
+     * @param array collections
      * @return minimum
      */
     public double min(double[] array) {
