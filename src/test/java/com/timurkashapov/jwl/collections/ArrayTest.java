@@ -19,7 +19,7 @@ public class ArrayTest {
         array.insert(20);
         array.insert(34);
 
-//        assertEquals(14, array.length);
+        assertEquals(new Integer(14), array.length);
 
         System.out.println(array.toString());
     }
