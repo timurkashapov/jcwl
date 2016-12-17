@@ -6,17 +6,6 @@ package com.timurkashapov.jwl;
  */
 public final class Index {
 
-    /*
-     * Constants
-     */
-
-    /*
-     * Fields
-     */
-
-    /*
-     * Constructors
-     */
     /**
      * Package access constructor.
      */
@@ -24,9 +13,6 @@ public final class Index {
         // TO-DO
     }
 
-    /*
-     * main()
-     */
     /**
      * Main entry point for application.
      * @param args command-line arguments
@@ -35,20 +21,4 @@ public final class Index {
         // TO-DO
 
     }
-
-    /*
-     * Getters and Setters
-     */
-
-    /*
-     * Logic methods
-     */
-
-    /*
-     * Utility methods
-     */
-
-    /*
-     * Inner classes
-     */
 }

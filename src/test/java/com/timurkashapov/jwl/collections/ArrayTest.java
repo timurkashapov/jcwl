@@ -1,5 +1,6 @@
 package com.timurkashapov.jwl.collections;
 
+import com.timurkashapov.jwl.algorithms.BubbleSort;
 import com.timurkashapov.jwl.api.utils.Generatable;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -59,20 +60,18 @@ public class ArrayTest implements Generatable {
     @Test
     public void testFind() {
 
-        Array array = new Array(1);
+        Array array = new Array(50);
 
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
-        array.add(Generatable.RANDOM.nextInt(100));
+        for (int i = 0; i < 50; i++) {
+            array.add(Generatable.RANDOM.nextInt(100));
+        }
 
         System.out.printf("\nSize is: %d", array.length);
         System.out.printf("\nArray:  %s", array.toString());
+
+        array = BubbleSort.sort(array);
+
+        System.out.printf("\nSorted : %s", array.toString());
 
         assertTrue("\nElement not find", array.find(55));
         System.out.printf("\nElement find - %d", 55);
