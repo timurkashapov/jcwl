@@ -1,19 +1,23 @@
 ### Welcome to jwl.
 jwl is Java-Working-Library for solve standard tasks with useful and fast experimental instruments:
-- Generators
-- Stopwatch
 
+*  **Generators** *( jwl.api )*
+*  **Stopwatch** *( jwl.time )*
 
 ***
-_**comming soon...**_
 
-- Data Structures
-> List: ArrayList
+comming soon...
 
-- Algorithms
+* Data Structures *( jwl.collections )*
+> Array
+
+
+
+* Algorithms *( jwl.algorithms )*
 > Sorting: Bobble Sort
 
 ***
+
 ### Authors and Contributors
 Design author and developer Timur Kashapov (@tkashapov) since 2016.
 
