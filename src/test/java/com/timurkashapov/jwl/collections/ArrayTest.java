@@ -10,27 +10,6 @@ import static org.junit.Assert.*;
 public class ArrayTest {
 
     @Test
-    public void testAdd() {
-
-        Array array = new Array(10);
-
-        array.add(12);
-        array.add(0);
-        array.add(-120);
-        array.add(19);
-        array.add(1900000);
-        array.add(50);
-        array.add(-5550);
-        array.add(2);
-        array.add(2);
-        array.add(34);
-
-        assertEquals(20, array.length);
-
-        System.out.println(array.toString());
-    }
-
-    @Test
     public void testSet() {
 
         Array array = new Array(5);
@@ -52,6 +31,47 @@ public class ArrayTest {
         array.get(2);
         array.get(3);
         array.get(4);
+
+    }
+
+    @Test
+    public void testAdd() {
+
+        Array array = new Array(10);
+
+        array.add(12);
+        array.add(0);
+        array.add(-120);
+        array.add(19);
+        array.add(1900000);
+        array.add(50);
+        array.add(-5550);
+        array.add(2);
+        array.add(2);
+        array.add(34);
+
+        assertEquals(20, array.length);
+
+        System.out.println(array.toString());
+    }
+
+    @Test
+    public void testFind() {
+
+        Array array = new Array(10);
+
+        array.add(12);
+        array.add(0);
+        array.add(-120);
+        array.add(19);
+        array.add(1900000);
+        array.add(50);
+        array.add(-5550);
+        array.add(2);
+        array.add(2);
+        array.add(34);
+
+        assertTrue("Element not find", array.find(100));
 
     }
 
