@@ -29,6 +29,10 @@ public final class Array {
     public Array(final int length) {
         this.length = length;
         this.source = new int[this.length];
+
+        for (int i = 0; i < this.length; i++) {
+            this.source[i] = i;
+        }
     }
 
     /**
@@ -57,14 +61,14 @@ public final class Array {
         int[] extended = new int[this.length + 1];
 
         for (int i = 0; i < this.length ; i++) {
-            this.source[i] = i;
             extended[i] = this.source[i];
         }
 
         extended[extended.length - 1] = element;
-        this.length = extended.length;
+        this.length++;
+        this.source = extended;
 
-        return extended;
+        return this.source;
     }
 
     /**

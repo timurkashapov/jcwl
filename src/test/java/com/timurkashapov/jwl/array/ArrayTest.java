@@ -15,8 +15,13 @@ public class ArrayTest {
         Array array = new Array(10);
 
         array.insert(12);
+        array.insert(50);
+        array.insert(20);
+        array.insert(34);
 
-        assertEquals(11, array.length);
+        assertEquals(14, array.length);
+
+        System.out.println(array.toString());
     }
 
     @Test
