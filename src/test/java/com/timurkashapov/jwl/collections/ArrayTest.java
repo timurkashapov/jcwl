@@ -1,11 +1,10 @@
 package com.timurkashapov.jwl.collections;
 
-import com.timurkashapov.jwl.algorithms.BubbleSort;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Test the array wrapper
+ * Test the array wrapper.
  * @author Timur Kashapov
  */
 public class ArrayTest {
