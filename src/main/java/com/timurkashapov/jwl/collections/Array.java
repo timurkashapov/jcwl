@@ -1,20 +1,20 @@
-package com.timurkashapov.jwl.array;
+package com.timurkashapov.jwl.collections;
 
 /**
  * Array wrapper.
  * @author Timur Kashapov
  */
-public final class Array {
+public final class Array<T>  {
 
     /**
-     * Source array.
+     * Source collections.
      */
-    private int[] source;
+    private T[] source;
 
     /**
-     * Length of source array.
+     * Length of source collections.
      */
-    public int length;
+    public Integer length;
 
     /**
      * Empty constructor.
@@ -26,12 +26,12 @@ public final class Array {
     /**
      * One argument constructor.
      */
-    public Array(final int length) {
+    public Array(final Integer length) {
         this.length = length;
-        this.source = new int[this.length];
+        this.source = (T[]) new Object[this.length];
 
         for (int i = 0; i < this.length; i++) {
-            this.source[i] = i;
+            this.source[i] = (T) new Object();
         }
     }
 
@@ -40,25 +40,25 @@ public final class Array {
      * @param index index
      * @param element member
      */
-    public void set(final int index, final int element) {
+    public void set(final int index, final T element) {
         this.source[index] = element;
     }
 
     /**
-     * Get the element from array.
+     * Get the element from collections.
      */
-    public int get(final int index) {
+    public T get(final int index) {
         return this.source[index];
     }
 
     /**
-     * Insert the element to the end of the array.
+     * Insert the element to the end of the collections.
      * @param element member
-     * @return extended array
+     * @return extended collections
      */
-    public int[] insert(final int element) {
+    public T[] insert(final T element) {
 
-        int[] extended = new int[this.length + 1];
+        T[] extended = (T[]) new Object[this.length + 1];
 
         for (int i = 0; i < this.length ; i++) {
             extended[i] = this.source[i];
@@ -72,9 +72,9 @@ public final class Array {
     }
 
     /**
-     * Remove the element from array.
+     * Remove the element from collections.
      */
-    public void remove(final int element) {
+    public void remove(final T element) {
 
         int i;
 
@@ -93,8 +93,8 @@ public final class Array {
     }
 
     /**
-     * Print the array.
-     * @return array
+     * Print the collections.
+     * @return collections
      */
     @Override
     public String toString() {
@@ -108,3 +108,4 @@ public final class Array {
         return s;
     }
 }
+
