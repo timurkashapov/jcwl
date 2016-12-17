@@ -9,11 +9,11 @@
 
 comming soon...
 
-* Data Structures *( jwl.collections )*
+* **Data Structures** *( jwl.collections )*
 > Array
 
 
 
-* Algorithms *( jwl.algorithms )*
+* **Algorithms** *( jwl.algorithms )*
 > Sorting: Bobble Sort
 
