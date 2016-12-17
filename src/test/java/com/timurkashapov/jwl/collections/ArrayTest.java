@@ -1,5 +1,6 @@
 package com.timurkashapov.jwl.collections;
 
+import com.timurkashapov.jwl.algorithms.BubbleSort;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -15,11 +16,16 @@ public class ArrayTest {
         Array array = new Array(10);
 
         array.insert(12);
+        array.insert(0);
+        array.insert(-120);
+        array.insert(19);
         array.insert(50);
-        array.insert(20);
+        array.insert(2);
         array.insert(34);
 
-        assertEquals(new Integer(14), array.length);
+        assertEquals(17, array.length);
+
+        System.out.println(BubbleSort.sort(array));
 
         System.out.println(array.toString());
     }

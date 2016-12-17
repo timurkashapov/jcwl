@@ -4,17 +4,17 @@ package com.timurkashapov.jwl.collections;
  * Array wrapper.
  * @author Timur Kashapov
  */
-public final class Array<T>  {
+public final class Array  {
 
     /**
      * Source collections.
      */
-    private T[] source;
+    private int[] source;
 
     /**
      * Length of source collections.
      */
-    public Integer length;
+    public int length;
 
     /**
      * Empty constructor.
@@ -26,12 +26,12 @@ public final class Array<T>  {
     /**
      * One argument constructor.
      */
-    public Array(final Integer length) {
+    public Array(final int length) {
         this.length = length;
-        this.source = (T[]) new Object[this.length];
+        this.source = new int[this.length];
 
         for (int i = 0; i < this.length; i++) {
-            this.source[i] = (T) new Object();
+            this.source[i] = i;
         }
     }
 
@@ -40,14 +40,14 @@ public final class Array<T>  {
      * @param index index
      * @param element member
      */
-    public void set(final int index, final T element) {
+    public void set(final int index, final int element) {
         this.source[index] = element;
     }
 
     /**
      * Get the element from collections.
      */
-    public T get(final int index) {
+    public int get(final int index) {
         return this.source[index];
     }
 
@@ -56,9 +56,9 @@ public final class Array<T>  {
      * @param element member
      * @return extended collections
      */
-    public T[] insert(final T element) {
+    public void insert(final int element) {
 
-        T[] extended = (T[]) new Object[this.length + 1];
+        int[] extended = new int[this.length + 1];
 
         for (int i = 0; i < this.length ; i++) {
             extended[i] = this.source[i];
@@ -67,14 +67,12 @@ public final class Array<T>  {
         extended[extended.length - 1] = element;
         this.length++;
         this.source = extended;
-
-        return this.source;
     }
 
     /**
      * Remove the element from collections.
      */
-    public void remove(final T element) {
+    public void remove(final int element) {
 
         int i;
 

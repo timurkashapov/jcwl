@@ -34,7 +34,6 @@ public final class Index {
     public static void main(final String[] args) {
         // TO-DO
 
-        System.out.println(Character.MAX_VALUE);
     }
 
     /*
