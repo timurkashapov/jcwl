@@ -41,7 +41,12 @@ public final class Array  {
      * @param element member
      */
     public void set(final int index, final int element) {
-        this.source[index] = element;
+
+        if (index >= 0 | index < this.length) {
+            this.source[index] = element;
+        } else {
+            throw new IndexOutOfBoundsException();
+        }
     }
 
     /**
