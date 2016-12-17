@@ -1,5 +1,6 @@
 package com.timurkashapov.jwl.collections;
 
+import com.timurkashapov.jwl.api.utils.Generatable;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -7,7 +8,7 @@ import static org.junit.Assert.*;
  * Test the array wrapper.
  * @author Timur Kashapov
  */
-public class ArrayTest {
+public class ArrayTest implements Generatable {
 
     @Test
     public void testSet() {
@@ -58,20 +59,23 @@ public class ArrayTest {
     @Test
     public void testFind() {
 
-        Array array = new Array(10);
+        Array array = new Array(1);
 
-        array.add(12);
-        array.add(0);
-        array.add(-120);
-        array.add(19);
-        array.add(1900000);
-        array.add(50);
-        array.add(-5550);
-        array.add(2);
-        array.add(2);
-        array.add(34);
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
+        array.add(Generatable.RANDOM.nextInt(100));
 
-        assertTrue("Element not find", array.find(100));
+        System.out.printf("\nSize is: %d", array.length);
+        System.out.printf("\nArray:  %s", array.toString());
+
+        assertTrue("\nElement not find", array.find(55));
+        System.out.printf("\nElement find - %d", 55);
 
     }
 
@@ -93,5 +97,10 @@ public class ArrayTest {
 
         System.out.printf("\n%s", array.toString());
 
+    }
+
+    @Override
+    public void generate() {
+        // TO-DO
     }
 }
