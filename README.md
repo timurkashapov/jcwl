@@ -3,18 +3,18 @@
 
 jwl is Java-Working-Library for solve standard tasks with useful and fast experimental instruments:
 
-* Generators
-* Stopwatch
+*  **Generators** *(jwl.api)*
+*  **Stopwatch** *(jwl.time)*
 
 ---
 
 comming soon...
 
-* Data Structures
-> List: ArrayList
+* Data Structures *(jwl.collections)*
+> Array
 
 
 
-* Algorithms
+* Algorithms *(jwl.algorithms)*
 > Sorting: Bobble Sort
 
