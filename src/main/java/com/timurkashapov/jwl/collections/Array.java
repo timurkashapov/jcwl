@@ -40,13 +40,19 @@ public final class Array  {
      * @param index index
      * @param element member
      */
-    public void set(final int index, final int element) {
+    public int set(final int index, final int element) {
+
+        int replaced;
 
         if (index >= 0 | index < this.length) {
+            replaced = this.source[index];
             this.source[index] = element;
+
         } else {
             throw new IndexOutOfBoundsException();
         }
+
+        return replaced;
     }
 
     /**
@@ -61,7 +67,7 @@ public final class Array  {
      * @param element member
      * @return extended collections
      */
-    public void insert(final int element) {
+    public void add(final int element) {
 
         int[] extended = new int[this.length + 1];
 
@@ -72,6 +78,18 @@ public final class Array  {
         extended[extended.length - 1] = element;
         this.length++;
         this.source = extended;
+    }
+
+    public int find(final int element) {
+
+        int serched = element;
+
+        for (int i = 0; i < this.length; i++) {
+            if (this.source[i] == element) {
+                break;
+            }
+        }
+        return element;
     }
 
     /**

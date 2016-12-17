@@ -64,6 +64,12 @@ public final class BubbleSort {
         return data;
     }
 
+    /**
+     * QuickSort algorithm for array of integers.
+     * Сортировка для массива целых чисел.
+     * @param array array
+     * @return array
+     */
     public static Array sort(final Array array) {
 
         for (int i = array.length - 1; i > 0; i--) {
@@ -84,14 +90,16 @@ public final class BubbleSort {
     /**
      * Swap the current members.
      * Меняем местами указанные члены массива.
-     * @param data data
+     * @param array array
      * @param first index
      * @param second index
      */
-    public static void swap(final Integer[] data, final Integer first, final Integer second) {
-        final int temp = data[first];
-        data[first] = data[second];
-        data[second] = temp;
+    public static void swap(final Integer[] array, final Integer first, final Integer second) {
+
+        final int temp = array[first];
+        array[first] = array[second];
+        array[second] = temp;
+
     }
 
     /**
@@ -102,8 +110,10 @@ public final class BubbleSort {
      * @param second index
      */
     public static void swap(final Array array, final Integer first, final Integer second) {
+
         final int temp = array.get(first);
         array.set(first, array.get(second));
         array.set(second, temp);
+
     }
 }

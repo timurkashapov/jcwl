@@ -11,21 +11,22 @@ import static org.junit.Assert.*;
 public class ArrayTest {
 
     @Test
-    public void testInsert() {
+    public void testAdd() {
 
         Array array = new Array(10);
 
-        array.insert(12);
-        array.insert(0);
-        array.insert(-120);
-        array.insert(19);
-        array.insert(50);
-        array.insert(2);
-        array.insert(34);
+        array.add(12);
+        array.add(0);
+        array.add(-120);
+        array.add(19);
+        array.add(1900000);
+        array.add(50);
+        array.add(-5550);
+        array.add(2);
+        array.add(2);
+        array.add(34);
 
-        assertEquals(17, array.length);
-
-        System.out.println(BubbleSort.sort(array));
+        assertEquals(20, array.length);
 
         System.out.println(array.toString());
     }
