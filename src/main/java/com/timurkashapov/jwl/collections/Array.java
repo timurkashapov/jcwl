@@ -107,7 +107,6 @@ public final class Array  {
 
         for (i = 0; i < this.length; i++) {
             if (this.source[i] == element) {
-                System.out.printf("\nFind %d", this.source[i]);
                 break;
             }
         }

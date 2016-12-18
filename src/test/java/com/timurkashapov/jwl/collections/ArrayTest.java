@@ -14,6 +14,8 @@ public class ArrayTest implements Generatable {
     @Test
     public void testSet() {
 
+        System.out.println("set()");
+
         Array array = new Array(5);
 
         array.set(0, 101);
@@ -21,10 +23,14 @@ public class ArrayTest implements Generatable {
         array.set(2, 1);
         array.set(3, 10);
         array.set(4, 1566);
+
+        System.out.println("OK");
     }
 
     @Test
     public void testGet() {
+
+        System.out.println("get()");
 
         Array array = new Array(5);
 
@@ -34,10 +40,14 @@ public class ArrayTest implements Generatable {
         array.get(3);
         array.get(4);
 
+        System.out.println("OK");
+
     }
 
     @Test
     public void testAdd() {
+
+        System.out.println("add()");
 
         Array array = new Array(10);
 
@@ -54,11 +64,13 @@ public class ArrayTest implements Generatable {
 
         assertEquals(20, array.length);
 
-        System.out.println(array.toString());
+        System.out.println("OK");
     }
 
     @Test
     public void testFind() {
+
+        System.out.println("find()");
 
         Array array = new Array(50);
 
@@ -66,20 +78,18 @@ public class ArrayTest implements Generatable {
             array.add(Generatable.RANDOM.nextInt(100));
         }
 
-        System.out.printf("\nSize is: %d", array.length);
-        System.out.printf("\nArray:  %s", array.toString());
-
         array = BubbleSort.sort(array);
 
-        System.out.printf("\nSorted : %s", array.toString());
+        assertTrue(array.find(15));
 
-        assertTrue("\nElement not find", array.find(55));
-        System.out.printf("\nElement find - %d", 55);
+        System.out.println("OK");
 
     }
 
     @Test
     public void testRemove() {
+
+        System.out.println("remove()");
 
         Array array = new Array(6);
 
@@ -90,11 +100,9 @@ public class ArrayTest implements Generatable {
         array.set(4, 196);
         array.set(5, 69);
 
-        System.out.printf("\n%s",array.toString());
-
         array.remove(10);
 
-        System.out.printf("\n%s", array.toString());
+        System.out.println("OK");
 
     }
 
