@@ -50,4 +50,16 @@ public class OrderedArray {
 	public int getSize() {
 		return this.length;
 	}
+
+    @Override
+    public String toString() {
+
+	    String result = "";
+
+        for (int i = 0; i < this.length; i++) {
+            result = new StringBuilder(result).append(this.source[i]).append(" ").toString();
+        }
+
+        return result;
+    }
 }
