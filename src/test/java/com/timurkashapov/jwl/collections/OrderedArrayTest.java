@@ -19,12 +19,12 @@ public class OrderedArrayTest {
 
     @Test
     public void getArray() throws Exception {
-
+        System.out.println(orderedArray.getArray());
     }
 
     @Test
     public void getSize() throws Exception {
-
+        System.out.println(orderedArray.getSize());
     }
 
 }
