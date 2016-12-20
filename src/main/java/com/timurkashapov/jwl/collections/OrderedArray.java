@@ -1,5 +1,6 @@
 package com.timurkashapov.jwl.collections;
 
+import com.timurkashapov.jwl.algorithms.BubbleSort;
 
 /**
  * Native ordered array of integers.
@@ -7,7 +8,7 @@ package com.timurkashapov.jwl.collections;
 public class OrderedArray {
 
 	private int[] source;
-	private int lenght;
+	private int length;
 
 	/**
 	 * Empty constructor.
@@ -19,12 +20,13 @@ public class OrderedArray {
 	/**
 	 * constructor.
 	 */
-	public OrderedArray(final int lenght) {
-		this.lenght = lenght;
-		this.source = new int[this.lenght];
+	public OrderedArray(final int length) {
+		this.length = length;
+		this.source = BubbleSort.sort(new int[this.length]);
 	}
 
 	public OrderedArray(final int[] data) {
+
 		// create ordered array from mixed array of integers
 	}
 
@@ -36,9 +38,9 @@ public class OrderedArray {
 	}
 
 	/**
-	 * Get the lenght of ordered array of integers.
+	 * Get the length of ordered array of integers.
 	 */ 
 	public int getSize() {
-		return this.lenght;
+		return this.length;
 	}
 }
