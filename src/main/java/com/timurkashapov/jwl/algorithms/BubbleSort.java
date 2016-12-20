@@ -4,6 +4,7 @@ import com.timurkashapov.jwl.collections.Array;
 
 /**
  * Classic bubble sort algorithms.
+ *
  * @author Timur Kashapov
  */
 public final class BubbleSort {
@@ -16,15 +17,17 @@ public final class BubbleSort {
     /**
      * Empty constructor.
      */
-    public BubbleSort(){}
+    public BubbleSort() {
+    }
 
     /**
      * QuickSort algorithm for array of integers.
      * Сортировка для массива целых чисел.
+     *
      * @param array array
      * @return sort array
      */
-    public static Integer[] sort(final Integer[] array) {
+    public static int[] sort(final int[] array) {
 
         for (int i = array.length - 1; i > 0; i--) {
 
@@ -32,7 +35,7 @@ public final class BubbleSort {
 
                 if (array[j] > array[j + 1]) {
 
-                    BubbleSort.swap(array, j, j + 1);
+                    BubbleSort.swap(array, array[j], array[j + 1]);
 
                 }
             }
@@ -44,6 +47,7 @@ public final class BubbleSort {
     /**
      * QuickSort algorithm for array of floats.
      * Сортировка для массива вещественных чисел.
+     *
      * @param data array
      * @return sort array
      */
@@ -67,6 +71,7 @@ public final class BubbleSort {
     /**
      * QuickSort algorithm for array of integers.
      * Сортировка для массива целых чисел.
+     *
      * @param array array
      * @return array
      */
@@ -90,11 +95,12 @@ public final class BubbleSort {
     /**
      * Swap the current members.
      * Меняем местами указанные члены массива.
-     * @param array array
-     * @param first index
+     *
+     * @param array  array
+     * @param first  index
      * @param second index
      */
-    public static void swap(final Integer[] array, final Integer first, final Integer second) {
+    public static void swap(final int[] array, final int first, final int second) {
 
         final int temp = array[first];
         array[first] = array[second];
@@ -105,8 +111,9 @@ public final class BubbleSort {
     /**
      * Swap the current members.
      * Меняем местами указанные члены массива.
-     * @param array array
-     * @param first index
+     *
+     * @param array  array
+     * @param first  index
      * @param second index
      */
     public static void swap(final Array array, final Integer first, final Integer second) {
