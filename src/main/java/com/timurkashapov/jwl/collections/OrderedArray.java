@@ -7,7 +7,14 @@ import com.timurkashapov.jwl.algorithms.BubbleSort;
  */
 public class OrderedArray {
 
+	/**
+	 * Source array.
+	 */
 	private int[] source;
+
+	/**
+	 * Array length.
+	 */
 	private int length;
 
 	/**
@@ -22,12 +29,12 @@ public class OrderedArray {
 	 */
 	public OrderedArray(final int length) {
 		this.length = length;
-		this.source = BubbleSort.sort(new int[this.length]);
+		this.source = new int[this.length];
 	}
 
 	public OrderedArray(final int[] data) {
-
-		// create ordered array from mixed array of integers
+		this.source = BubbleSort.sort(data);
+		this.length = source.length;
 	}
 
 	/**
