@@ -1,5 +1,7 @@
 package com.timurkashapov.jwl;
 
+import com.timurkashapov.jwl.collections.Array;
+
 /**
  * Entry point for application.
  * @author Timur Kashapov
