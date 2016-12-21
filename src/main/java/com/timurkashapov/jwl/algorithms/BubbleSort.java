@@ -12,7 +12,7 @@ public final class BubbleSort {
     /**
      * Title of algorithm.
      */
-    private static final String BOBBLE_SORT_TITLE = "BOBBLE SORT";
+    private static final String TITLE = "BOBBLE SORT";
 
     /**
      * Empty constructor.
