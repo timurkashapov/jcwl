@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  */
 public class OrderedArrayTest {
 
-    OrderedArray orderedArray;
+    private OrderedArray orderedArray;
 
     @Before
     public void createInstance() {
@@ -19,6 +19,7 @@ public class OrderedArrayTest {
 
     @Test
     public void getArray() throws Exception {
+        createInstance();
         System.out.println(orderedArray.getArray());
     }
 
