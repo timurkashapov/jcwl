@@ -3,11 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.timurkashapov</groupId>
-    <artifactId>JWL</artifactId>
+    <artifactId>jWL</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>JWL</name>
+    <name>jWL</name>
+    <description>Java-Working-Library</description>
     <url>http://maven.apache.org</url>
 
     <developers>
