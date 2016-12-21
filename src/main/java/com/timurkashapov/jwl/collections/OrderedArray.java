@@ -5,7 +5,7 @@ import com.timurkashapov.jwl.algorithms.BubbleSort;
 /**
  * Native ordered array of integers.
  */
-public class OrderedArray {
+public final class OrderedArray {
 
 	/**
 	 * Source array.
