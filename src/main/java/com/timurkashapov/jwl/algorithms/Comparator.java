@@ -5,7 +5,7 @@ package com.timurkashapov.jwl.algorithms;
  *
  * @author Timur Kashapov
  */
-public class Comparator {
+public final class Comparator {
 
     /**
      * constructor.
@@ -21,16 +21,38 @@ public class Comparator {
      * @param second second char.
      * @return result of compare.
      */
-    public static boolean compare(char first, char second) {
-
-        boolean result = false;
-
-        int f = first;
-        int s = second;
-
-        System.out.printf("\nFirst: %d Second: %d", f, s);
-
-        return result;
+    public static boolean compare(final char first, final char second) {
+        return first == second;
     }
 
+    /**
+     * Compare the two float's.
+     *
+     * @param first  first float.
+     * @param second second float.
+     * @return result of compare.
+     */
+    public static boolean compare(final float first, final float second) {
+        return first == second;
+    }
+
+    /**
+     * Get the HEX decimal of member.
+     *
+     * @param source char member.
+     * @return hex string.
+     */
+    public static String getHexOf(char source) {
+        return Integer.toHexString(source);
+    }
+
+    /**
+     * Get the BIN decimal of member.
+     *
+     * @param source char member.
+     * @return binary string.
+     */
+    public static String getBinOf(char source) {
+        return Integer.toBinaryString(source);
+    }
 }
