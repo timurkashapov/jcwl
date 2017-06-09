@@ -1,7 +1,72 @@
 # Created by .ignore support plugin (hsz.mobi)
+
+#PROJECT INGNORE AREAS
+JWL
+sketchs
+site
+
+# ---------------
+*.txt
+complete
+
+
+# Windows ---------------
+*.bat
+
+# Git ---------------
+.git
 .gitignore
-.idea/
-JWL.iml
-target/
-src/main/java/com/timurkashapov/jwl/sketchs/
-src/site/
+
+# JetBrains ---------------
+.idea
+*.iml
+
+#CMake ---------------
+CMakeFiles
+*.txt
+*.cbp
+*.cmake
+Makefile
+
+#Maven ---------------
+target/classes
+target/maven-archiver
+target/maven-status
+
+# Visual Studio ---------------
+*.sdf
+*.sln
+*.suo
+*.ilk
+*.pdb
+*.vcxproj
+*.filters
+*.log
+*.idb
+*.tlog
+*.lastbuildstate
+*.opensdf
+*.db
+
+# Code-Light ---------------
+*.clang
+*.codelite
+*.workspace
+*.project
+
+#Java ---------------
+*.jar
+*.war
+
+# Android ----------------
+# Gradle
+*.txt
+build
+gradle
+gradlew
+*.bat
+*.iml
+*.gradle
+*.properties
+*.gradlew
+*.pro
