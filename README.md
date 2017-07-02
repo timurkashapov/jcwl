@@ -1,6 +1,6 @@
-# jwl
+# jcwl
 
-**jwl** is **Java-Working-Library** for solve standard tasks with useful and fast experimental instruments:
+**jcwl** is **java-common-working-library** for solve standard tasks with useful and fast experimental instruments:
 
 *  **Generators** *( jwl.api )*
 *  **Stopwatch** *( jwl.time )*
