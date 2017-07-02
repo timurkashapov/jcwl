@@ -1,6 +1,3 @@
-package com.timurkashapov.jwl.time;
-
-import com.timurkashapov.jwl.api.Constants;
 
 import java.io.IOException;
 
@@ -39,11 +36,11 @@ public final class Stopwatch {
     private long last;
 
     /**
-     * @deprecated
+     * @Deprecated
      */
     private long currentMilliseconds = 0L;
     /**
-     * @deprecated
+     * @Deprecated
      */
     private long lastMilliseconds = 0L;
 
@@ -117,7 +114,6 @@ public final class Stopwatch {
                 minutes = Stopwatch.ZERO;
                 hours = Stopwatch.ZERO;
                 System.out.println("ONE HOUR");
-                System.exit(Constants.ZERO);
             }
 
             if (minutes > Stopwatch.FIFTY_NINE & seconds > Stopwatch.FIFTY_NINE) {

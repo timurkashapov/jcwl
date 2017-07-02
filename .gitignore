@@ -1,39 +1,37 @@
-# Created by .ignore support plugin (hsz.mobi)
-
-#PROJECT INGNORE AREAS
-JWL
-sketchs
-site
-
-# ---------------
-*.txt
+# ENV ---------------------------------------------
 complete
 
+# ARCHIVES
+*.zip
+*.rar
+*.7z
 
-# Windows ---------------
+# TEXTFILES
+*.txt
+
+# WINDOWS ---------------------------------------------
 *.bat
 
-# Git ---------------
+# GIT ---------------------------------------------
 .git
 .gitignore
 
-# JetBrains ---------------
+# JETBRAINS ---------------------------------------------
 .idea
-*.iml
 
-#CMake ---------------
+# CMAKE ---------------------------------------------
 CMakeFiles
 *.txt
 *.cbp
 *.cmake
 Makefile
 
-#Maven ---------------
+# MAVEN ---------------------------------------------
 target/classes
 target/maven-archiver
 target/maven-status
 
-# Visual Studio ---------------
+# VISUAL STUDIO ---------------------------------------------
 *.sdf
 *.sln
 *.suo
@@ -48,18 +46,21 @@ target/maven-status
 *.opensdf
 *.db
 
-# Code-Light ---------------
+# CODELIGHT ---------------------------------------------
 *.clang
 *.codelite
 *.workspace
 *.project
 
-#Java ---------------
+# JAVA ---------------------------------------------
 *.jar
 *.war
+classes
+*.class
 
-# Android ----------------
-# Gradle
+# ANDROID ----------------------------------------------
+
+# GRADLE ---
 *.txt
 build
 gradle
