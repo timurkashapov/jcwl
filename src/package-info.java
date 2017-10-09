@@ -1,6 +1,6 @@
 /**
- * Java Work Library for experimental programming instruments.
+ * 
  *
- * @author Timur Kashapov
+ * @author Timur Kashapov (shako)
  */
-package com.timurkashapov.jwl;
+package com;

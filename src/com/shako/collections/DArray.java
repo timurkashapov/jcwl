@@ -21,6 +21,7 @@
 * - remove last element in array.
 * - remove element by index with offset of array.
 *
+* @author Timur Kashapov.
 */
 public class DArray {
 
@@ -115,6 +116,7 @@ public class DArray {
 
 	} // add(Object item)
 
+	// ----------------------------------------------------------------------------
 	/**
 	*
 	* TESTING
@@ -133,6 +135,7 @@ public class DArray {
 		System.out.println( boolets.toString() );
 
 	} // main()
+	// ----------------------------------------------------------------------------
 
 	/** */
 	@Override
